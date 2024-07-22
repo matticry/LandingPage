@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latinium</title>
+    <link rel="stylesheet" href="/src/css/productos.css">
+
+</head>
+<body>
+    <div class="main_lati">
+        <h1>Latinium Fast</h1>
+        <div class="move_left"></div>
+        <div class="move_right"></div>
+        <div class="silder_container">
+            <div class="slider">
+                <div class="panel_morado">
+                    <img  src="/src/images/icons/mobile.svg" alt="">
+                    <h6 id="images">FAST FREE</h6>
+                    <div id="mover" class="section">
+                        <ul>
+                            <li>Seguridad y Privacidad</li>
+                            <li>Flexibilidad y Autonomía</li>
+                            <li>Capacitación y Soporte</li>
+                            <li>Funcionalidades Avanzadas</li>
+                           
+                        </ul>
+                    </div>
+                    <h2>FREE!!</h2>
+                    <a href="/contacto" class="agregar">Agregar</a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="panel_morado">
+                    <img src="/src/images/icons/mobile.svg" alt="">
+                    <h6 id="images">FAST PLAN 200 REGISTROS</h6>
+                    <div id="mover" class="section">
+                        <ul>
+                            <li>Beneficios Económicos y Descuentos</li>
+                            <li>Hasta 200 registros</li>
+                            <li>Flexibilidad y Autonomía</li>
+                            <li>Capacitación y Soporte</li>
+                           
+                        </ul>
+                    </div>
+                    <h2 id="pequeño">$15,00</h2>
+                    <a href="/contacto" class="agregar">Agregar</a>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="panel_morado">
+                    <img src="/src/images/icons/mobile.svg" alt="">
+                    <h6 id="images">FAST PLAN 2.000 REGISTROS</h6>
+                    <div id="mover" class="section">
+                        <ul>
+                            <li>Uso Ilimitado con 2.000 Registros Anuales</li>
+                            <li>Privacidad y Manejo de Respaldos</li>
+                            <li>Capacitación Grupal y Configuración</li>
+                            <li>Documentos Electrónicos y Manejo de IVA</li>
+                           
+                        </ul>
+                    </div>
+                    <h2 id="pequeño">$20,00</h2>
+                    <a href="/contacto" class="agregar">Agregar</a>
+                </div>
+            </div>
+            <div class="slider ajusta">
+                <div class="panel_morado"> 
+                    <img src="/src/images/icons/mobile.svg" alt="">
+                    <h6 id="images">FAST ILIMITADO</h6>
+                    <div id="mover" class="section">
+                        <ul>
+                            <li>Uso Ilimitado con Registros Ilimitados</li>
+                            <li>Privacidad y Respaldos Locales</li>
+                            <li>Soporte Técnico y Capacitación</li>
+                            <li>Documentos Electrónicos y Manejo de IVA</li>
+                        </ul>
+                    </div>
+                    <h2 id="pequeño">$25,00 + IVA</h2>
+                    <a href="/contacto" class="agregar">Agregar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+const sliders = document.querySelectorAll('.slider');
+const totalSliders = sliders.length;
+
+document.querySelector('.move_right').addEventListener('click', function() {
+    if (currentIndex < totalSliders - 1) {
+        currentIndex++;
+        updateSliderPosition();
+    }
+});
+
+document.querySelector('.move_left').addEventListener('click', function() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+    }
+});
+
+function updateSliderPosition() {
+    const sliderContainer = document.querySelector('.silder_container');
+    const newPosition = -currentIndex * 109;
+    sliderContainer.style.transform = `translateX(${newPosition}%)`;
+}
+
+    </script>
+</body>
+</html>

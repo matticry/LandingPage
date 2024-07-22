@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  boton: string;
+  imagePath ?: string;
+  imageWidth?: string;
+  imageHeight?: string;
+}
+
+const { title, description, boton, imagePath, imageWidth, imageHeight } = Astro.props;
+---
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
+  </head>
+  <body>
+    <main>
+      <div class="p1_contendor">
+        <div class="p1_contendor_h">
+          <h1 class="titulo_principal">{title}</h1>
+          <p class="p1_contendor_p">
+            {description}
+          </p>
+          <a class="custom_a" href="">{boton}</a>
+        </div>
+        <div class="p1_contendor_h">
+          <img 
+            src={imagePath} 
+            alt="" 
+            style={`width: ${imageWidth}; height: ${imageHeight};`} 
+          />
+        </div>
+      </div>
+    </main>
+
+  </body>
+</html>
+
+

@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Valor</title>
+    <link rel="stylesheet" href="/src/css/principal.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="container_main column">
+                <h1>PROPUESTA DE VALOR</h1>
+                <p>Usamos la mejor y última tecnología en el desarrollo y aplicación de las soluciones que ofrecemos.</p>
+                <div class="container_buttons">
+                    <button id="aboutButton" class="border">LEER MÁS</button>
+                    <a href="https://calendly.com/matticry1/latinium" class="custom" target="_blank">AGENDA TU DEMO</a>
+                </div>
+            </div>
+        </div>
+        <div class="poster">
+            <div class="texto">
+                <div class="close-button">&times;</div>
+                <h1>ELIXIR SOFTWARE</h1>
+                <p>Sé parte de la mejor plataforma para manejar tus ventas <br>  <span>Obten un 20% de descuento</span> en este momento. </p>
+            </div>
+            <div class="card_container">
+                <div class="cards column">
+                    <div class="container_titulo_card">
+                        <h3>FREE</h3>
+                    </div>
+                    <ul>
+                        <li>1000 registros.</li>
+                        <li>Auditoria.</li>
+                        <li>Tiempo de uso ilimitado.</li>
+                    </ul>
+                    <a href="/productos">VER DETALLES</a>
+                </div>
+                <div class="cards column">
+                    <div class="container_titulo_card">
+                        <h3>PREMIUM</h3>
+                        <button>GET 20% OFF</button>
+                    </div>
+                    <ul>
+                        <li>1000 registros.</li>
+                        <li>Auditoria.</li>
+                        <li>Tiempo de uso ilimitado.</li>
+                    </ul>
+                    <a href="/productos">VER DETALLES</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutButton = document.getElementById('aboutButton');
+            aboutButton.addEventListener('click', function() {
+                window.location.href = '/darsec';
+            });
+    
+            const closeButton = document.querySelector('.close-button');
+            const poster = document.querySelector('.poster');
+    
+            function showPoster() {
+                poster.style.display = 'flex';
+            }
+    
+            function hidePoster() {
+                poster.style.display = 'none';
+                setTimeout(showPoster, 1000000); // 10000 milisegundos = 10 segundos
+            }
+    
+            closeButton.addEventListener('click', hidePoster);
+    
+            // Asegúrate de que el poster esté visible al principio
+            showPoster();
+        });
+    </script>
+</body>
+</html>

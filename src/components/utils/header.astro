@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/header.css">
+</head>
+<body>
+    <header>
+        <button id="menu-icon" class="button-custom"></button>
+        <div class="cabecera">
+            <img src="/src/images/logo.png" alt="Logo" class="imagen__cabecera">
+            <a href="/inicio" class="custom__button_cabecera">Inicio</a>
+            <a href="/sobreNosotros" class="custom__button_cabecera">Sobre Nosotros</a>
+            <a href="/precios" class="custom__button_cabecera">Precios</a>
+            <div class="dropdown">
+                <a href="/productos" class="custom__button_cabecera">Productos</a>
+                <ul class="dropdown-content">
+                    <li><a href="/primerp">Latinium</a></li>
+                    <li><a href="/darsec">Darsec</a></li>
+                    <li><a href="/fast">Latinium Fast</a></li>
+                    <li><a href="/firma">Firma Elec</a></li>
+                </ul>
+            </div>
+            <a href="/testimonios" class="custom__button_cabecera">Testimonios</a>
+            <a href="/contacto" class="custom__button_cabecera">Contacto</a>
+            <a href="/capacitacion" class="custom__button_cabecera">Capacitación</a>
+            <button class="carrito"></button>
+        </div>
+    </header>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.getElementById('menu-icon');
+        const cabecera = document.querySelector('.cabecera');
+
+        menuIcon.addEventListener('click', function () {
+            cabecera.classList.toggle('active');
+        });
+    });
+</script>
+</html>

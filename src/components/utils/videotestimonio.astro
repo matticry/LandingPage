@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Animation</title>
+    <link rel="stylesheet" href="/src/css/video.css">
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aboutButton = document.getElementById('testimonioButton');
+        aboutButton.addEventListener('click', function() {
+            window.location.href = '/contacto';
+        });
+    });
+</script>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="lightbulb">
+                <div class="bulb-string">
+                    <div class="string-end"></div>
+                </div>
+                <div class="bulb-head"></div>
+                <div class="bulb-glow"></div>
+                <h1>OPINIONES DE NUESTROS CLIENTES</h1>
+            </div>
+        </div>
+    </div>
+        <div class="video_main">
+            <div class="video_container">
+                <img src="/src/images/poster.png" alt="" class="video-thumbnail" data-video="/src/components/videos/video.mp4">
+                <div class="panel_testimonio">
+                    <h1>SOFÍA GALECIO</h1>
+                    <span>★★★★★</span>
+                    <p>Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                    </p>
+                    <span id="arrow"></span>
+                    <button id="testimonioButton">ME UNO AL TEAM</button>
+                </div>
+            </div>
+            <div class="video_container">
+                <img src="/src/images/poster.png" alt="" class="video-thumbnail" data-video="/src/components/videos/video.mp4">
+                <div class="panel_testimonio">
+                    <h1>SOFÍA GALECIO</h1>
+                    <span>★★★★★</span>
+                    <p>Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                    </p>
+                    <span id="arrow"></span>
+                    <button id="testimonioButton">ME UNO AL TEAM</button>
+                </div>
+            </div>
+            <div class="video_container">
+                <img src="/src/images/poster.png" alt="" class="video-thumbnail" data-video="/src/components/videos/video.mp4">
+                <div class="panel_testimonio">
+                    <h1>SOFÍA GALECIO</h1>
+                    <span>★★★★★</span>
+                    <p>Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                    </p>
+                    <span id="arrow"></span>
+                    <button id="testimonioButton">ME UNO AL TEAM</button>
+                </div>
+            </div>
+            <div class="video_container">
+                <img src="/src/images/poster.png" alt="" class="video-thumbnail" data-video="/src/components/videos/video.mp4">
+                <div class="panel_testimonio">
+                    <h1>SOFÍA GALECIO</h1>
+                    <span>★★★★★</span>
+                    <p>Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                        Testimonio que emite una persona respecto de una realidad que ha presenciado y que resulta de interés.
+                    </p>
+                    <span id="arrow"></span>
+                    <button id="testimonioButton">ME UNO AL TEAM</button>
+                </div>
+            </div>
+            <!-- Repite para cada video_container -->
+        </div>
+    
+        <!-- Modal -->
+        <div id="videoModal" class="modal">
+            <span class="close">&times;</span>
+            <video id="modalVideo" controls>
+                <source src="/src/components/videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('videoModal');
+        const modalVideo = document.getElementById('modalVideo');
+        const closeBtn = document.querySelector('.modal .close');
+        
+        document.querySelectorAll('.video-thumbnail').forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const videoSrc = thumbnail.getAttribute('data-video');
+                modalVideo.querySelector('source').src = videoSrc;
+                modalVideo.load();
+                modal.style.display = 'flex';
+            });
+        });
+        
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            modalVideo.pause();
+        });
+        
+        window.addEventListener('click', (e) => {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+                modalVideo.pause();
+            }
+        });
+    });
+    
+        </script>
+
+
+</body>
+</html>

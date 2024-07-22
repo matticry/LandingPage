@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/src/css/otro.css">
+    
+</head>
+<body>
+    <div class="blanco">
+        <div class="page2_main">
+            <img class="image" src="/src/images/PHONE.png" alt="">
+            <div class="container_message">
+                <div class="message_profile">
+                    <div class="custom-div">
+                        <p id="typing-effect"></p>
+                    </div>
+                    <img src="/src/images/perfil.svg" alt="">
+                </div>
+                <div class=" message_profile message_profile_2">
+                    <img src="/src/images/perfil.svg" alt="">
+                    <div class="custom-div-2">
+                        <p id="typing-effect-2"></p>
+                    </div>
+                </div>
+                <div class=" message_profile message_profile_3">
+                    <div class="custom-div-3">
+                        <p id="typing-effect-3"></p>
+                    </div>
+                    <img src="/src/images/perfil.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const text1 = "Esta es mi empresa preferida, por su servicio de primera categoría.";
+    const text2 = "Me encanta su atención al cliente, siempre tan amable y rápida.";
+    const text3 = "Me encanta su servicio de primera categoría. ¡Gracias por compartirlo conmigo!";
+    let index1 = 0;
+    let index2 = 0;
+    let index3 = 0;
+    const typingEffect1 = document.getElementById('typing-effect');
+    const typingEffect2 = document.getElementById('typing-effect-2');
+    const typingEffect3 = document.getElementById('typing-effect-3');
+
+    function type1() {
+        if (index1 < text1.length) {
+            typingEffect1.textContent += text1.charAt(index1);
+            index1++;
+            setTimeout(type1, 100); // Velocidad de "escritura"
+        }
+    }
+
+    function type2() {
+        if (index2 < text2.length) {
+            typingEffect2.textContent += text2.charAt(index2);
+            index2++;
+            setTimeout(type2, 100); // Velocidad de "escritura"
+        }
+    }
+
+    function type3() {
+        if (index3 < text3.length) {
+            typingEffect3.textContent += text3.charAt(index3);
+            index3++;
+            setTimeout(type3, 100); // Velocidad de "escritura"
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const image = document.querySelector('.image');
+        const message1 = document.querySelector('.message_profile');
+        const message2 = document.querySelector('.message_profile_2');
+        const message3 = document.querySelector('.message_profile_3');
+
+        image.addEventListener('transitionend', function() {
+            message1.classList.add('show');
+            setTimeout(() => {
+                type1();
+                message2.classList.add('show');
+                setTimeout(type2, 100);
+                message3.classList.add('show');
+                setTimeout(type3, 100);
+            }, 500); // Retrasa el inicio del primer efecto de escritura
+        });
+
+        image.classList.add('show');
+    });
+</script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latinium</title>
+</head>
+<body>
+    <div class="main_lati">
+        <div class="move_left"></div>
+        <div class="move_right"></div>
+        <div class="silder_container">
+            <div id="sli" class="slider">
+                <div class="panel_morado">
+                    <h5>DESDE</h5>
+                    <h2>$50 + IVA</h2>
+                    <h6>Contabilidad e Inventario</h6>
+                    <button></button>
+                    <div class="section">
+                        <ul>
+                            <li>3 USUARIOS COMPLETO</li>
+                            <li>MÓDULO MYPIMES</li>
+                            <li>FACTURACIÓN ELECTRÓNICA</li>
+                            <li>REPORTES CONTABLES</li>
+                            <li>REGISTRO DE PRODUCTOS Y BODEGAS</li>
+                            <li>CONTROL DE INVENTARIO</li>
+                            <li>240 REGISTROS DE FACTURACIÓN</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="agregar">Agregar</a>
+                </div>
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/5Y1kYeD2LEA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="slider ajusta">
+                <div class="panel_morado">
+                    <h5>DESDE</h5>
+                    <h2>$100 + IVA</h2>
+                    <h6>Contabilidad e Inventario</h6>
+                    <button></button>
+                    <div class="section">
+                        <ul>
+                            <li>5 USUARIOS COMPLETO</li>
+                            <li>MÓDULO MYPIMES</li>
+                            <li>FACTURACIÓN ELECTRÓNICA</li>
+                            <li>REPORTES CONTABLES</li>
+                            <li>REGISTRO DE PRODUCTOS Y BODEGAS</li>
+                            <li>CONTROL DE INVENTARIO</li>
+                            <li>500 REGISTROS DE FACTURACIÓN</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="agregar">Agregar</a>
+                </div>
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/5Y1kYeD2LEA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0;
+const sliders = document.querySelectorAll('.slider');
+const totalSliders = sliders.length;
+
+document.querySelector('.move_right').addEventListener('click', function() {
+    if (currentIndex < totalSliders - 1) {
+        currentIndex++;
+        updateSliderPosition();
+    }
+});
+
+document.querySelector('.move_left').addEventListener('click', function() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+    }
+});
+
+function updateSliderPosition() {
+    const sliderContainer = document.querySelector('.silder_container');
+    const newPosition = -currentIndex * 109;
+    sliderContainer.style.transform = `translateX(${newPosition}%)`;
+}
+
+    </script>
+</body>
+</html>

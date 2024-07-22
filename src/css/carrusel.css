@@ -1,0 +1,62 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+h4 {
+    font-family: var(--font-titulo);
+    font-size: 20px;
+    color:blue;
+    text-align: start;
+    margin-left: 150px;
+}
+
+.container_carrusel {
+    width: 1250px; /* Ajusta este valor según el diseño deseado */
+    height: 224px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.carrusel_inner {
+    display: flex;
+    transition: transform 0.3s ease;
+    cursor: grab;
+    animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-400px * 5));
+    }
+}
+
+.container_carrusel img {
+    width: 400px; /* Ajusta este valor según el diseño deseado */
+    height: 100%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.container_carrusel img:hover {
+    filter: grayscale(0%) contrast(2);
+    transform: scale(1.1);
+}
+@media screen and (max-width: 768px) {
+    .main{
+        min-width: 100%;
+    }
+    .container_carrusel{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+}

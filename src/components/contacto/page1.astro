@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="/src/css/otro.css">
+</head>
+<body>
+    <div class="contacto_blue">
+        <div class="contacto_blue_container column">
+            <h1>CONTÁCTANOS</h1>
+            <p>Usamos la mejor y última tecnología de los tiempos, en el desarrollo y aplicación de las soluciones que ofrecemos.</p>
+            <a class="custom_a" href="/testimonios">Leer más</a>
+        </div>
+        <div class="c_container column">
+            <h1>CONTÁCTANOS</h1>
+            <form id="contact-form">
+                <label for="nombre" class="custom_label">
+                    <input type="text" class="input" name="nombre" placeholder="" required>
+                    <span class="label_name">Ingresa tu nombre</span>
+                </label>
+                <label for="correo" class="custom_label">
+                    <input type="email" class="input" name="correo" placeholder="" required>
+                    <span class="label_name">Ingresa tu correo</span>
+                </label>
+                <label for="asunto" class="custom_label">
+                    <input type="text" class="input" name="asunto" placeholder="" required>
+                    <span class="label_name">Ingresa un Asunto</span>
+                </label>
+                <label for="mensaje" class="custom_label">
+                    <input type="text" class="input" name="mensaje" placeholder="">
+                    <span class="label_name">Tu mensaje (opcional)</span>
+                </label>
+                <button id="enviar" type="submit" class="custom_a">Enviar</button>
+            </form>
+            
+        </div>
+       
+    </div>
+    
+    <script src="/src/components/js/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  boton: string;
+  src ?: string;
+  width?: string;
+  height?: string;
+}
+
+const { title, description, boton, src, width, height } = Astro.props;
+
+---
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/src/css/principal.css">
+</head>
+<body>
+    <div class="blanco">
+        <div class="container_super_default">
+            <h1>{title}</h1>
+            <h6>{description}</h6>
+            <iframe width= {width}  height= {height} src={src} frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+</body>
+</html>

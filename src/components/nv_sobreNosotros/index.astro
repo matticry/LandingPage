@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="/src/css/sobreNosotros.css">
+</head>
+<body>
+    <div class="main_lati">
+        <h1>¿QUIÉN ES ELIXIR SOFTWARE?</h1>
+        <div class="move_left"></div>
+        <div class="move_right"></div>
+        <div class="silder_container">
+            <div class="slider">
+                <img src="/src/images/eco.jpg" alt="">
+                <div class="text_container">
+                    <p>Elixir Software es una innovadora empresa de tecnología especializada en el desarrollo de sistemas de facturación para negocios de todos los tamaños. Fundada en 2015 por el visionario emprendedor Javier Mendoza, la compañía ha experimentado un rápido crecimiento en el sector de software empresarial. </p>
+                </div>
+            </div>
+            <div class="slider ajusta">
+                <img src="/src/images/eco2.jpg" alt="">
+                <div class="text_container">
+                    <p>Elixir Software es una innovadora empresa de tecnología especializada en el desarrollo de sistemas de facturación para negocios de todos los tamaños. Fundada en 2015 por el visionario emprendedor Javier Mendoza, la compañía ha experimentado un rápido crecimiento en el sector de software empresarial. </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script>
+    let currentIndex = 0;
+const sliders = document.querySelectorAll('.slider');
+const totalSliders = sliders.length;
+
+document.querySelector('.move_right').addEventListener('click', function() {
+if (currentIndex < totalSliders - 1) {
+    currentIndex++;
+    updateSliderPosition();
+}
+});
+
+document.querySelector('.move_left').addEventListener('click', function() {
+if (currentIndex > 0) {
+    currentIndex--;
+    updateSliderPosition();
+}
+});
+
+function updateSliderPosition() {
+const sliderContainer = document.querySelector('.silder_container');
+const newPosition = -currentIndex * 109;
+sliderContainer.style.transform = `translateX(${newPosition}%)`;
+}
+
+</script>
+</html>

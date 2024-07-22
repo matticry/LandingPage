@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container_mega">
+            <div class="image">
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/5Y1kYeD2LEA" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="container_main_ column">
+                <h1>¡Atrévete a transformar tu negocio!</h1>
+                <p>Usamos la mejor y última tecnología en el desarrollo y aplicación de las soluciones que ofrecemos.</p>
+                <div class="container_buttons">
+                    <button id="hola" class="border">ASESORAMIENTO</button>
+                    <a href="https://calendly.com/matticry1/latinium" class="custom blue" target="_blank">AGENDA TU DEMO</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+        
+       
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const aboutButton = document.getElementById('hola');
+        aboutButton.addEventListener('click', function() {
+            window.location.href = '/contacto';
+        });
+    });
+</script>
+</html>

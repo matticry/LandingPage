@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel</title>
+    <link rel="stylesheet" href="/src/css/carrusel.css">
+</head>
+<body>
+    <div class="main">
+        <h4>Estas marcas usan Latinium: </h4>
+        <div class="container_carrusel" id="carousel">
+            <div class="carrusel_inner" id="carrusel_inner">
+                <img src="/src/images/carrusel.png" alt="imagen-carrusel">
+                <img src="/src/images/botica.png" alt="imagen-carrusel">
+                <img src="/src/images/carrusel.png" alt="imagen-carrusel">
+                <img src="/src/images/carrusel.png" alt="imagen-carrusel">
+                <img src="/src/images/carrusel.png" alt="imagen-carrusel">
+            </div>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('carousel');
+    const inner = document.getElementById('carrusel_inner');
+    const images = document.querySelectorAll('.carrusel_inner img');
+    let imageCount = images.length;
+
+    // Clonar imágenes para efecto infinito
+    for (let i = 0; i < imageCount; i++) {
+        let clone = images[i].cloneNode(true);
+        inner.appendChild(clone);
+    }
+
+    // Reiniciar la animación cuando termina
+    inner.addEventListener('animationiteration', () => {
+        inner.style.animation = 'none';
+        inner.offsetHeight; /* Triggers reflow */
+        inner.style.animation = 'scroll 10s linear infinite'; // Ajusta la duración según necesites
+    });
+});
+
+
+
+
+    </script>
+</body>
+</html>
