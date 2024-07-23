@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Exo 2';
-    src: url(/src/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url(/src/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -121,7 +121,7 @@
 .custom-div {
     position: relative;
     background-color: #f9cf90;
-    background-image: url('/src/images/icons/visto.svg');
+    background-image: url('/public/images/icons/visto.svg');
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: 99% 90%;
@@ -150,7 +150,7 @@
 .custom-div-2 {
     position: relative;
     background-color: #f9cf90;
-    background-image: url('/src/images/icons/visto.svg');
+    background-image: url('/public/images/icons/visto.svg');
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: 99% 90%;
@@ -252,7 +252,7 @@
 .custom-div-3 {
     position: relative;
     background-color: #c77ad3;
-    background-image: url('/src/images/icons/visto.svg');
+    background-image: url('/public/images/icons/visto.svg');
     background-repeat: no-repeat;
     object-fit: cover;
     background-position: 99% 90%;
@@ -297,7 +297,7 @@
 .p4_fondo_blue{
     width: 100%;
     height: 100%;
-    background-image: url(/src/images/fondo_azul_2.svg);
+    background-image: url(/public/images/fondo_azul_2.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -340,7 +340,7 @@
 .contacto_blue{
     width: 100%;
     height: 100%;
-    background-image: url(/src/images/new_hola.svg);
+    background-image: url(/public/images/new_hola.svg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -499,20 +499,20 @@
     border-radius: 9999px;
 }
 .whatsapp{
-    background-image: url(/src/images/whatsapp.svg);
+    background-image: url(/public/images/whatsapp.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;
 
 }
 .twitter{
-    background-image: url(/src/images/twitter.svg);
+    background-image: url(/public/images/twitter.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;
 }
 .facebook{
-    background-image: url(/src/images/Vectorf.svg);
+    background-image: url(/public/images/Vectorf.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;
@@ -520,28 +520,28 @@
 
 }
 .instagram{
-    background-image: url(/src/images/logo-instagram.svg);
+    background-image: url(/public/images/logo-instagram.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;
 
 }
 .tiktok{
-    background-image: url(/src/images/logo-tiktoktiktok.png);
+    background-image: url(/public/images/logo-tiktoktiktok.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;
 
 }
 .email{
-    background-image: url(/src/images/Vectoremail.svg);
+    background-image: url(/public/images/Vectoremail.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;
 
 }
 .gps{
-    background-image: url(/src/images/icon_footer3.svg);
+    background-image: url(/public/images/icon_footer3.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;

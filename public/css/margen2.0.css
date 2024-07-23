@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Exo 2';
-    src: url(/src/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url(/src/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -33,7 +33,7 @@ body {
 .capacitacion_main{
     width: 100%;
     height: 276px;
-    background-image: url(/src/images/image2.svg);
+    background-image: url(/public/images/image2.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,7 +52,7 @@ body {
     width: 446px;
     height: 126px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.75);
-    background-image: url(/src/images/latinium.png);
+    background-image: url(/public/images/latinium.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 100px;
@@ -82,7 +82,7 @@ body {
     width: 446px;
     height: 126px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.75);
-    background-image: url(/src/images/darsec_.png);
+    background-image: url(/public/images/darsec_.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 80px;
@@ -112,7 +112,7 @@ body {
     width: 446px;
     height: 156px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.75);
-    background-image: url(/src/images/user.png);
+    background-image: url(/public/images/user.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 80px;
@@ -186,7 +186,7 @@ body {
 .page2_main {
     width: 100%;
     height: 100%;
-    background-image: url(/src/images/fondo_marco.png);
+    background-image: url(/public/images/fondo_marco.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
@@ -284,7 +284,7 @@ body {
     p{
         color: white;
         font-size: 15px;
-        font-family: var(--font-parrafo);
+        font-family: var(--font-parrafo) ;
         margin-left: 10px;
         text-align: justify;
         font-weight: 700;
@@ -1241,7 +1241,7 @@ footer {
 .panel_minimalista{
     width: 1279.2px;
     height: 185px;
-    background-image: url(/src/images/barra_minimalista.svg);
+    background-image: url(/public/images/barra_minimalista.svg);
     object-fit: cover;
     background-repeat: no-repeat;
     align-content: center;
@@ -1398,7 +1398,7 @@ footer {
 .otra_barra{
     width: 1279.2px;
     height: 185px;
-    background-image: url(/src/images/barra_minimalista_rosada.svg);
+    background-image: url(/public/images/barra_minimalista_rosada.svg);
     object-fit: cover;
     background-repeat: no-repeat;
     align-content: center;
@@ -1526,7 +1526,7 @@ a{
     padding-right: 20px;
     display: flex;
     height: 100%;
-    background-image: url(/src/images/beneficio_elixir.svg);
+    background-image: url(/public/images/beneficio_elixir.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -1543,7 +1543,7 @@ a{
 .blue_container{
     width: 100%;
     height: 100%;
-    background-image: url("/src/images/fondo_azul_eli.svg");
+    background-image: url("/public/images/fondo_azul_eli.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

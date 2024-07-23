@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Exo 2';
-    src: url(/src/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url(/src/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }

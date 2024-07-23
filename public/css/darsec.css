@@ -1,3 +1,13 @@
+:root {
+    --font-titulo: 'Exo 2', sans-serif;
+    --font-parrafo: 'Roboto', sans-serif;
+    --color-primary: #090979;
+    --color-secondary: #c67ad4;
+    --color-boton: #6ffaf5;
+    --color-boton-rosado: #9b25ba;
+    --tamano-titulo: 20px;
+    --tamano-propuesta: 25px;
+}
 .section{
     position: absolute;
     width: 100%;
@@ -244,7 +254,7 @@ main{
 .ad_cards{
     width: calc(100% / 2);
     margin-top: 71px;
-    background-image: url(/src/images/elixir_img.png);
+    background-image: url(/public/images/elixir_img.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
@@ -314,7 +324,7 @@ main{
     padding-right: 20px;
     display: flex;
     height: 100%;
-    background-image: url(/src/images/beneficio_elixir.svg);
+    background-image: url(/public/images/beneficio_elixir.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;

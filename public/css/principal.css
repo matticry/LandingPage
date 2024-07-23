@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Exo 2';
-    src: url(/src/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url(/src/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -102,7 +102,7 @@ body{
     }
     li{
         list-style: none;
-        background-image: url(/src/images/icons/checkmark.png);
+        background-image: url(/public/images/icons/checkmark.png);
         background-repeat: no-repeat;
         background-position: 0% 50%;
         background-size: 19px;
@@ -434,7 +434,7 @@ iframe{
     transition: transform 0.5s ease;
 }
 .ajusta{
-    margin-left: 100px;
+    margin-left: 120px;
     
 }
 .slider{

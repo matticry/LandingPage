@@ -1,3 +1,13 @@
+:root {
+    --font-titulo: 'Exo 2', sans-serif;
+    --font-parrafo: 'Roboto', sans-serif;
+    --color-primary: #090979;
+    --color-secondary: #c67ad4;
+    --color-boton: #6ffaf5;
+    --color-boton-rosado: #9b25ba;
+    --tamano-titulo: 20px;
+    --tamano-propuesta: 25px;
+}
 .main {
     display: flex;
     flex-direction: column;
