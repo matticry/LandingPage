@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -361,7 +361,20 @@ body{
         font-weight: bolder;
         text-align: center;
         margin-top: 40px;
+        margin-bottom: 30px;
         width: 100%;
+    }
+    #facturador{
+        background-image: url(../images/sisdos.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 100px;
+    }
+    #contable{
+        background-image: url(../images/sistres.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 100px;
     }
     button{
         position: absolute;

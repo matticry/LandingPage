@@ -24,16 +24,17 @@
 }
 
 .container_blue{
+    border: 1px solid white;
     width: 100%;
     margin: 0;
     padding: 0;
     #t1{
-        font-family: var(--font-titulo);
+        font-family: var(--font-titulo), serif;
         font-size: 36px;
         color: white;
         text-align: center;
         margin-bottom: 40px;
-        margin-left: 177px;
+        margin-left: 200px;
         margin-right: 107px;
         width: 1068px;
         height: 153px;
@@ -44,7 +45,7 @@
         font-size: 20px;
         color: var(--color-boton);
         text-align: center;
-        margin-left: 313px;
+        margin-left: 380px;
         margin-right: 213px;
         margin-bottom: 102px;
         width: 771px;

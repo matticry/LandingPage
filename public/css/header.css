@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url(/public/fuentes/Roboto_Serif/RobotoSerif-VariableFont_wght.ttf);
+    src: url(/public/fuentes/Roboto_Serif/static/RobotoSerif-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }

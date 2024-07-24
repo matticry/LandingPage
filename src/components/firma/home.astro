@@ -7,67 +7,38 @@
 
 </head>
 <body>
-    <main>
-        <div class="imagen_blue_container">
-            <div id="pedro" class="ad_cards none_image"></div>
-            <div class="ad_cards none_image">
-                <h1 class="titulo_principal">Beneficios del Producto</h1>
-                <div class="beneficios">
-                  <div class="bene_container">
-                    <div class="div_content_bene">
-                      <img class="bene_img" src="/images/check.png" alt="" />
-                      <h6>Beneficio 1</h6>
-                      <h3>
-                        Un beneficio es la manera en la que un producto o servicio
-                        puede mejorar.
-                      </h3>
-                    </div>
-                    <div class="div_content_bene">
-                      <img class="bene_img" src="/images/check.png" alt="" />
-                      <h6>Beneficio 1</h6>
-                      <h3>
-                        Un beneficio es la manera en la que un producto o servicio
-                        puede mejorar.
-                      </h3>
-                    </div>
-                    <div class="div_content_bene">
-                      <img class="bene_img" src="/images/check.png" alt="" />
-                      <h6>Beneficio 1</h6>
-                      <h3>
-                        Un beneficio es la manera en la que un producto o servicio
-                        puede mejorar.
-                      </h3>
-                    </div>
-                    <div class="div_content_bene">
-                      <img class="bene_img" src="/images/check.png" alt="" />
-                      <h6>Beneficio 1</h6>
-                      <h3>
-                        Un beneficio es la manera en la que un producto o servicio
-                        puede mejorar.
-                      </h3>
-                    </div>
-                    <div class="div_content_bene">
-                      <img class="bene_img" src="/images/check.png" alt="" />
-                      <h6>Beneficio 1</h6>
-                      <h3>
-                        Un beneficio es la manera en la que un producto o servicio
-                        puede mejorar.
-                      </h3>
-                    </div>
-                    <div class="div_content_bene">
-                      <img class="bene_img" src="/images/check.png" alt="" />
-                      <h6>Beneficio 1</h6>
-                      <h3>
-                        Un beneficio es la manera en la que un producto o servicio
-                        puede mejorar.
-                      </h3>
-                    </div>
-                  </div>
-    
-                </div>
-                
+    <div class="principal">
+        <h1>BENEFICIOS DEL PRODUCTO</h1>
+        <div class="beneficios">
+            <img src="/images/persona.jpg">
+            <div id="div1" class="panel_celeste">
+                <h2>Con tu plan tus beneficios serán:</h2>
+                <ul>
+                    <li>Firmas desde Cualquier  Lugar y en Cualquier  Momento 🌍 ⏰</li>
+                    <li>Seguridad y Legalidad Garantizadas 🔒</li>
+                    <li>Comodidad y Ahorro de Tiempo ⏳ ✨</li>
+                </ul>
+            </div>
+            <div id="div2" class="panel_celeste_dos">
+                <h2>Con tu plan tus beneficios serán:</h2>
+                <ul>
+                    <li>Ahorro en Costos Operativos 💸</li>
+                    <li>Integración con Sistemas Existentes 🔄 🖥️</li>
+                    <li>Impacto Ambiental Positivo 🌱 💚</li>
+                </ul>
             </div>
         </div>
-    </main>
+    </div>
 </body>
+<script>
+    const div1 = document.getElementById('div1');
+    const div2 = document.getElementById('div2');
+
+    function toggleDivs() {
+        div1.classList.toggle('hidden');
+        div2.classList.toggle('visible');
+    }
+
+    setInterval(toggleDivs, 2000); // Llama a la función cada 2 segundos
+</script>
 </html>
