@@ -158,15 +158,6 @@ main {
     height: 100%;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-.imagen__footer {
-    max-width: 100%;
-    height: 100px;
-}
 
 .button-custom {
     margin: 0;
@@ -188,7 +179,7 @@ body{
     background-color: var(--color-primary);
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 1000px) and (min-width: 100px) {
     .cabecera {
         flex-direction: column;
         align-items: center;
@@ -235,6 +226,7 @@ body{
     header {
         display: flex;
         z-index: 1000;
+        width: 100% !important;
         justify-content: center;
 
     }

@@ -343,12 +343,6 @@ body {
 
     }
 }
-footer {
-    img {
-        width: 100%;
-        max-height: 100px;
-    }
-}
 
 .contendor {
     height: 100px;
@@ -1373,69 +1367,7 @@ footer {
 
 /* Pantalla Footer CSS */
 
-.footer{
-    display: flex;
-    max-width: 100%;
-    height: 400px;
-    background-color: var(--color-primary);
 
-}
-.column{
-    flex-direction: column;
-}
-.footer_container{
-    height: 70%;
-    width: 100%;
-    margin-right: 20px;
-    display: flex;
-    img{
-        width: 300px;
-        margin-left: 50px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-}
-.otra_barra{
-    width: 1279.2px;
-    height: 185px;
-    background-image: url(/public/images/barra_minimalista_rosada.svg);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    align-content: center;
-   
-    h1{
-        font-family: var(--font-titulo);
-        color: white;
-        color: var(--color-primary);
-        font-weight: bold;
-        font-size: 32px;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-left: 144px;
-        margin-bottom: -10px;
-    }
-    h2{
-        font-family: var(--font-titulo);
-        color: white;
-        font-weight: bold;
-        color: var(--color-primary);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 34px;
-        margin-left: 144px;
-    }
-    a{
-        font-family: var(--font-titulo);
-        color: var(--color-primary);
-        font-weight: bold;
-        font-size: 25px;
-        margin-top: 30px;
-        text-decoration: none;
-        background-color: var(--color-secondary);
-        height: 45px;
-        border-radius: 15px;
-        padding: 2px 2px;
-
-    }
-}
 .centro{
     display: flex;
     justify-content: center;
@@ -1451,75 +1383,6 @@ footer {
     }
     
 }
-.info_footer{
-    display: flex;
-    color: white;
-    font-family: var(--font-parrafo);
-    font-size: 20px;
-    margin-left: 50px;
-    max-width: max-content;
-    height: 35%;
-    align-items: center;
-    img{
-        width: 30px;
-        margin-right: 12px;
-    }
-}
-.info_container_icons{
-    height: 20vh;
-}
-.info_button_footer{
-    display: flex;
-    width: 156px;
-    height: 166px;
-    color: white;
-    margin-left: 50px;
-    margin-top: 20px;
-    a{
-        font-family: var(--font-titulo);
-    }
-    p{
-        font-family: var(--font-parrafo);
-        font-size: 20px;
-        margin: 10px;
-        text-align: justify;
-
-    }
-}
-
-.info_footer_socials{
-    width: 50%;
-    height: 99%;
-    display: flex;
-    
-}
-.button_footer_social{
-margin-left: 400px;
-img{
-    width: 150px;
-    margin-left: 50px;
-    background-color: var(--color-boton-rosado);
-    
-}
-a{
-    font-family: var(--font-parrafo);
-    font-size: 30px;
-    width: 217px;
-    font-weight: bold;
-    height: 56px;
-    text-decoration: none;
-    background-color: var(--color-secondary);
-    
-}
-}
-.barra{
-    width: 100%;
-}
-
-
-
-
-
 /* BeneficioBlueTemplate CSS */
 .imagen_blue_container{
     width: 100%;
@@ -1625,7 +1488,6 @@ a{
         }
 
     }
-
     .page2_main{
         background-image: none;
 
@@ -1656,62 +1518,6 @@ a{
     }
     .capacitacion_container{
         width: 100%;
-    }
-    .button_footer_social{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        margin-right: 100px;
-    }
-    .info_container_icons{
-        margin-left: -72px;
-        gap: 20px;
-    }
-    .info_footer_socials{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        margin-top: 80px;
-        margin-left: 100px;
-    }
-    .info_button_footer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        a{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } 
-    }
-    .footer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-bottom: 80%;
-    }
-    .info_container_icons{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-    .footer_container{
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-
     }
     .panel_minimalista, .otra_barra{
         width: 100%;

@@ -333,9 +333,10 @@ main{
     width: 100%;
     height: 100%;
     display: flex;
+    background-color: var(--color-primary);
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+
 
     h1{
         font-family: "Exo 2", sans-serif;
@@ -401,7 +402,7 @@ main{
     opacity: 0;
     transition: opacity 1s ease-in-out;
     position: absolute;
-    z-index: -2;
+    z-index: 1000;
     right: 150px;
     margin-top: -50px;
     width: 400px;
@@ -531,7 +532,46 @@ main{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 1000px) and (min-width: 300px) {
+    .panel_celeste_dos{
+        position: absolute;
+        right: auto;
+        bottom: 0;
+        margin-bottom: 90px;
+        width: 300px !important;
+    }
+    .panel_celeste{
+        margin-top: 100px;
+        width: 300px !important;
+    }
+    .principal{
+        position: relative;
+        padding-bottom: 90px;
+    }
+    .beneficios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        gap: 0;
+        li{
+            font-size: 20px;
+        }
+        img{
+            margin-left: 20px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+
+
+
+
+
+
     .move_left, .move_right{
         display: block;
     }
